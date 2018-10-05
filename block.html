@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Button</title>
+	<link rel="stylesheet" href="block.css">
+	<link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet"> 
+	<script src="main.js"></script>
+</head>
+<body>
+	<div class="container">
+		
+		<h1>Choose any.</h1>
+		<div class="container_two">
+			<button id="one" onclick="chpok('text')">
+				
+			</button>
+			<button id="sred"  onclick="chpok('text')">
+				
+			</button>
+			<button id="two"  onclick="chpok('text')">
+				
+			</button>
+			<div id="text" style="display: none;">
+    		<h1 id="hb">You gay.</h1>
+		</div>
+		</div>
+		</div>
+	<script>
+function chpok(id){
+    elem = document.getElementById(id); //находим блок div по его id, который передали в функцию
+    state = elem.style.display; //смотрим, включен ли сейчас элемент
+    if (state =='none') elem.style.display='block'; //если включен, то выключаем //иначе - включаем
+}
+</script>
+</body>
+</html>
